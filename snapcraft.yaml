@@ -8,6 +8,7 @@ description: |
 confinement: strict
 grade: stable
 icon: icon.png
+license: GPL-3.0-or-later
 
 #package-repositories:
 # - type: apt
