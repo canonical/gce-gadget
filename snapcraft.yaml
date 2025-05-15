@@ -9,6 +9,7 @@ confinement: strict
 build-base: devel
 grade: devel
 icon: icon.png
+license: GPL-3.0-or-later
 
 hooks:
   prepare-device:
