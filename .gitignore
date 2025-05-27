@@ -1,4 +1,5 @@
 parts/
 prime/
 stage/
-pc_*.snap
+gce-gadget_*.snap
+gadget.yaml

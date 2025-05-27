@@ -1,13 +1,14 @@
-name: pc
-version: '24-0.2'
+name: gce-gadget
+version: '24-0.1'
 type: gadget
 base: core24
-summary: PC gadget for generic devices
+summary: GCE gadget for instances launched in Google Cloud
 description: |
-    This gadget enables generic pc devices to work with Ubuntu Core
+    This gadget enables GCE VMs to run Ubuntu Core
 confinement: strict
 grade: stable
 icon: icon.png
+license: GPL-3.0-or-later
 
 #package-repositories:
 # - type: apt
@@ -96,3 +97,8 @@ parts:
       # We need to install directly in the project dir as snapcraft checks there
       # for gadget.yaml instead of looking first at the prime folder.
       install -m 644 gadget-"${CRAFT_ARCH_BUILD_FOR}".yaml "${CRAFT_PROJECT_DIR}"/gadget.yaml
+  cloud-init:
+    plugin: nil
+    source: .
+    override-build: |
+      install -m 644 cloud.conf "${CRAFT_PART_INSTALL}"/cloud.conf
