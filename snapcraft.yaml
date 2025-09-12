@@ -10,6 +10,10 @@ grade: stable
 icon: icon.png
 license: GPL-3.0-or-later
 
+platforms:
+  amd64:
+  arm64:
+
 #package-repositories:
 # - type: apt
 #   ppa: ucdev/uc-staging-ppa
