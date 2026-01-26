@@ -1,5 +1,5 @@
 name: gce-gadget
-version: '24-0.1'
+version: '24-0.2'
 type: gadget
 base: core24
 summary: GCE gadget for instances launched in Google Cloud
