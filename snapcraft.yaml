@@ -1,13 +1,12 @@
 name: gce-gadget
-version: '26-0.1'
+version: '26-0.2'
 type: gadget
 base: core26
 summary: GCE gadget for instances launched in Google Cloud
 description: |
     This gadget enables GCE VMs to run Ubuntu Core
 confinement: strict
-build-base: devel
-grade: devel
+grade: stable
 icon: icon.png
 license: GPL-3.0-or-later
 
