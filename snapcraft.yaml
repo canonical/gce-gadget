@@ -1,5 +1,5 @@
 name: gce-gadget
-version: '26-0.2'
+version: '26-0.3'
 type: gadget
 base: core26
 summary: GCE gadget for instances launched in Google Cloud
