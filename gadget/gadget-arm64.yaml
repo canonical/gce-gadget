@@ -55,10 +55,9 @@ defaults:
   # Now we've redesigned `ssh-key-sync` in the `gce-guest-suite-core` snap it no longer
   # uses the super-privileged `system-files` interface. Instead the `ssh-key-sync` helper writes
   # to its own `$SNAP_COMMON` dir and we point sshd at it via the (shipped here) cloud.conf
-  # The remaining "manual" interface is `hostname-control`, which will connect automatically
-  # from here when we have a proper ID for the gce-guest-suite-core snap (i.e. when it's finally published)
-  # TL;DR uncomment below and add the output of `snap info gce-guest-suite-core` when it's published
+  # The remaining "manual" interface is `hostname-control` which will connect automatically
+  # below
 
-# connections:
-#   - plug: <GCE_GUEST_SNAP_ID>:hostname-control
-#     slot: system:hostname-control
+connections:
+ - plug: pFW262Ov8qp7QiCyKftmv5VlBfDxhBN2:hostname-control
+   slot: system:hostname-control
